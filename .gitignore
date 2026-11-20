@@ -1,0 +1,19 @@
+# Local Python environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Local editor and operating-system files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Generated cleaned data can be rebuilt from the committed archive
+data/processed/*.csv
+
+# Temporary files and logs
+*.log
+*.tmp

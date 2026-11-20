@@ -1,0 +1,4 @@
+model,cv_macro_f1,test_macro_f1,test_balanced_accuracy,test_accuracy,whale_precision,whale_recall,best_parameters
+Random forest,0.35402563908537865,0.3295374428324146,0.3298396723286005,0.708994708994709,0.05263157894736842,0.058823529411764705,"{""model__max_depth"": 12, ""model__min_samples_leaf"": 5, ""model__n_estimators"": 150}"
+Majority-class baseline,,0.3045977011494253,0.3333333333333333,0.8412698412698413,0.0,0.0,"{""strategy"": ""most_frequent""}"
+Logistic regression,0.26619967962401464,0.2565490423871029,0.3314865300092071,0.3835978835978836,0.022222222222222223,0.29411764705882354,"{""model__C"": 0.1}"
