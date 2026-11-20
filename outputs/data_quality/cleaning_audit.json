@@ -1,0 +1,41 @@
+{
+  "before": {
+    "rows": 250000,
+    "columns": 23,
+    "missing_cells": 198469,
+    "exact_duplicates": 2500
+  },
+  "after": {
+    "rows": 247500,
+    "columns": 23,
+    "missing_cells": 0,
+    "exact_duplicates": 0
+  },
+  "rows_after_duplicate_removal": 247500,
+  "missing_cells_before_imputation": 198383,
+  "invalid_numeric_values_by_column": {
+    "Age": 733,
+    "SessionCount": 488,
+    "AverageSessionLength": 0,
+    "FirstPurchaseDaysAfterInstall": 0,
+    "ActiveDays30d": 0,
+    "PlayerLevel30d": 0,
+    "AdsWatched30d": 0,
+    "SocialActions30d": 0,
+    "PurchaseCount30d": 0,
+    "WinRate": 244,
+    "InAppPurchaseAmount": 0
+  },
+  "date_issues": {
+    "InstallDate": 0,
+    "LastPurchaseDate": 0,
+    "future_install_dates": 1,
+    "install_after_purchase": 330
+  },
+  "target_counts_after_cleaning": {
+    "Minnow": 208328,
+    "Dolphin": 33670,
+    "Whale": 5502
+  },
+  "important_note": "The expanded dataset contains generated records. The cleaning exercise does not make them real-world observations."
+}

@@ -1,0 +1,88 @@
+{
+  "target": "SpendingSegment",
+  "classes": [
+    "Minnow",
+    "Dolphin",
+    "Whale"
+  ],
+  "features": [
+    "Age",
+    "SessionCount",
+    "AverageSessionLength",
+    "Gender",
+    "Country",
+    "Device",
+    "GameGenre"
+  ],
+  "numeric_features": [
+    "Age",
+    "SessionCount",
+    "AverageSessionLength"
+  ],
+  "categorical_features": [
+    "Gender",
+    "Country",
+    "Device",
+    "GameGenre"
+  ],
+  "selected_model": "Random forest",
+  "selected_parameters": {
+    "model__max_depth": 12,
+    "model__min_samples_leaf": 5,
+    "model__n_estimators": 150
+  },
+  "evaluation_rows": 756,
+  "source_rows_used": 3024,
+  "split": {
+    "test_size": 0.25,
+    "random_state": 42,
+    "stratified": true
+  },
+  "validation": {
+    "method": "GridSearchCV",
+    "folds": 5,
+    "scoring": "macro-F1",
+    "random_state": 42
+  },
+  "comparison": [
+    {
+      "model": "Logistic regression",
+      "cv_macro_f1": 0.26619967962401464,
+      "test_macro_f1": 0.2565490423871029,
+      "test_balanced_accuracy": 0.3314865300092071,
+      "test_accuracy": 0.3835978835978836,
+      "whale_precision": 0.022222222222222223,
+      "whale_recall": 0.29411764705882354,
+      "best_parameters": {
+        "model__C": 0.1
+      }
+    },
+    {
+      "model": "Random forest",
+      "cv_macro_f1": 0.35402563908537865,
+      "test_macro_f1": 0.3295374428324146,
+      "test_balanced_accuracy": 0.3298396723286005,
+      "test_accuracy": 0.708994708994709,
+      "whale_precision": 0.05263157894736842,
+      "whale_recall": 0.058823529411764705,
+      "best_parameters": {
+        "model__max_depth": 12,
+        "model__min_samples_leaf": 5,
+        "model__n_estimators": 150
+      }
+    },
+    {
+      "model": "Majority-class baseline",
+      "cv_macro_f1": NaN,
+      "test_macro_f1": 0.3045977011494253,
+      "test_balanced_accuracy": 0.3333333333333333,
+      "test_accuracy": 0.8412698412698413,
+      "whale_precision": 0.0,
+      "whale_recall": 0.0,
+      "best_parameters": {
+        "strategy": "most_frequent"
+      }
+    }
+  ],
+  "warning": "The original dataset publisher describes the data as synthetic. These scores are educational results, not evidence about real players or campaign impact."
+}
