@@ -134,7 +134,7 @@ Use the predicted segment to define a small offer pilot, then compare it with a 
 
 | Member | Student ID / GitHub | Main contribution |
 |---|---|---|
-| Hessa Khalfan | H00535166 · [@HesKal](https://github.com/HesKal) | Business problem formulation and dataset preparation; validation and quality visualisations. |
+| Hessa Khalfan | H00535166 · [@HesKal](https://github.com/HesKal) | Business problem formulation; dataset preparation, validation, and data-quality visualisations; exploratory data analysis (EDA) and feature engineering; and Streamlit app development. |
 | Nourah Abdulla | H00535834 · [@NourahAlghfeli](https://github.com/NourahAlghfeli) | Data understanding and cleaning; quality checks and cleaned-dataset review. |
 | Maryam Ali Bin Hamdah | H00535836 · [@MaryamBinHamdah](https://github.com/MaryamBinHamdah) | Data cleaning, dataset search and selection; source documentation and data dictionary. |
 
