@@ -66,7 +66,7 @@ The following are the project’s **held-out test results**. They describe perfo
 |---|---:|---:|---:|
 | **Decision Tree — Gini (selected)** | **94.62%** | **86.23%** | **86.65%** |
 | Decision Tree — Entropy, GridSearchCV-selected | 94.32% | 85.90% | 86.05% |
-| Random Forest — tuned | 78.37% | 76.722% | 64.40% |
+| Random Forest — tuned | 78.37% | 76.72% | 64.40% |
 | XGBoost — tuned | 88.15% | 91.88% | 76.51% |
 | Dummy — majority-class baseline | 84.17% | 33.33% | 30.47% |
 | TF-IDF + Logistic Regression | 48.50% | 52.41% | 33.44% |
