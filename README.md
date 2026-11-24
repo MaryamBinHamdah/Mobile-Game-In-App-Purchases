@@ -66,12 +66,12 @@ The following are the project’s **held-out test results**. They describe perfo
 |---|---:|---:|---:|
 | **Decision Tree — Gini (selected)** | **94.62%** | **86.23%** | **86.65%** |
 | Decision Tree — Entropy, GridSearchCV-selected | 94.32% | 85.90% | 86.05% |
-| Random Forest — tuned | 91.78% | 92.22% | 78.64% |
+| Random Forest — tuned | 78.37% | 76.722% | 64.40% |
 | XGBoost — tuned | 88.15% | 91.88% | 76.51% |
 | Dummy — majority-class baseline | 84.17% | 33.33% | 30.47% |
-| TF-IDF + Logistic Regression | 43.02% | 46.30% | 30.18% |
+| TF-IDF + Logistic Regression | 48.50% | 52.41% | 33.44% |
 
-The Gini Decision Tree is used in the deployed app. Its three-fold cross-validation Macro-F1 was **0.8450**, close to the GridSearchCV-selected Entropy tree (**0.8492**). Gini achieved the higher held-out Macro-F1 and **81.05% Whale precision**. The tuned Random Forest and XGBoost found more Whales (recall of 94.45% and 95.18%), but with lower Whale precision (43.90% and 48.97%). This is a business trade-off: higher Whale recall can identify more high-spending players, while lower precision can result in more non-Whales being included in a Whale-targeted offer group. The Gini tree was selected for the app based on its overall and class-specific test performance and the project’s margin-conscious use case.
+The Gini Decision Tree is used in the deployed app. Its three-fold cross-validation Macro-F1 was **0.8450**, close to the GridSearchCV-selected Entropy tree (**0.8492**). Gini achieved the higher held-out Macro-F1 and **81.05% Whale precision**. The tuned Random Forest and XGBoost found more Whales (recall of 84.91% and 95.18%), but with lower Whale precision (46.56% and 48.97%). This is a business trade-off: higher Whale recall can identify more high-spending players, while lower precision can result in more non-Whales being included in a Whale-targeted offer group. The Gini tree was selected for the app based on its overall and class-specific test performance and the project’s margin-conscious use case.
 
 The majority-class baseline shows why accuracy alone is insufficient: it reaches 84.17% accuracy by predicting the most common segment, but its balanced accuracy is 33.33% and it identifies no Dolphin or Whale players.
 
@@ -136,7 +136,7 @@ Use the predicted segment to define a small offer pilot, then compare it with a 
 |---|---|---|
 | Hessa Khalfan | H00535166 · [@HesKal](https://github.com/HesKal) | Business problem formulation; dataset preparation, validation, and data-quality visualisations; exploratory data analysis (EDA) and feature engineering; and Streamlit app development. |
 | Nourah Abdulla | H00535834 · [@NourahAlghfeli](https://github.com/NourahAlghfeli) | Data understanding and cleaning; quality checks and cleaned-dataset review. |
-| Maryam Ali Bin Hamdah | H00535836 · [@MaryamBinHamdah](https://github.com/MaryamBinHamdah) | Data cleaning, dataset search and selection; source documentation and data dictionary. |
+| Maryam Ali Bin Hamdah | H00535836 · [@MaryamBinHamdah](https://github.com/MaryamBinHamdah) | Data cleaning, dataset search and selection; source documentation and data dictionary, Developing Random Forest model and NLP(TF-IDF + Logistic Regression) model|
 
 ## AI use statement
 
